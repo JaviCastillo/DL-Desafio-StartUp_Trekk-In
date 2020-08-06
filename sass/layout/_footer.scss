@@ -1,0 +1,47 @@
+/*====================================================== 
+====== LAYOUT: FOOTER
+====================================================== */
+
+.footer {
+    padding: 4vh 7.5vw;
+    text-align: center;
+    background: #221d23;
+    height: 20vh;
+    font-size: $medium;
+    color: $silver-chalice;
+
+
+
+    .footer__menu-list{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        width: 350px;
+        
+        a{
+            text-decoration: none;
+            color: $silver-chalice;
+            transition-duration: 0.3s;
+
+            &:hover{
+                text-shadow: 1px 1px 2px gray;
+            }
+
+            &:focus{
+                text-shadow: 1px 1px 4px lightgray;
+            }
+        }
+    }
+
+    .footer__menu-tag p{
+        font-size: $medium;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 5vh 7.5vw;
+    }
+}

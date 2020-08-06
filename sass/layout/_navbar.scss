@@ -1,0 +1,61 @@
+/*====================================================== 
+====== LAYOUT: NAVBAR
+====================================================== */
+.navbar{
+    display: flex;
+    width: 100%;
+    padding: 5vh 7.5vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: $medium;
+    justify-content: space-between;
+}
+
+.navbar__burger{
+    display: block;
+    cursor: pointer;
+}
+
+.navbar__menu{
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    .navbar__menu-list{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        width: 350px;
+        
+        a{
+            text-decoration: none;
+            color: $raising-black;
+            transition-duration: 0.3s;
+
+            &:hover{
+                text-shadow: 1px 1px 2px gray;
+            }
+
+            &:focus{
+                text-shadow: 1px 1px 4px lightgray;
+            }
+        }
+    }
+
+    .navbar__menu-button{
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .navbar__burger{
+        display: none;
+    }
+
+    .navbar__menu{
+        display: flex;
+    }
+}

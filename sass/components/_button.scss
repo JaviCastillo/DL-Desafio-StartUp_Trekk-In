@@ -1,0 +1,48 @@
+/*====================================================== 
+====== COMPONENT: BUTTON
+====================================================== */
+
+
+.button-blue {
+    background-color: $ball-blue;
+    color: $white;
+    cursor: pointer;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 15px;
+    transition-duration: 0.3s;
+
+    &:hover {
+      background-color: $middle-blue;
+      color: $white;
+    }
+
+    &:focus {
+      background-color: $spanish-gray;
+      box-shadow: none;
+      outline: none;
+    }
+}
+
+.button-white {
+    background-color: $white;
+    color: $raising-black;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 15px;
+    transition-duration: 0.3s;
+
+    &:hover {
+      background-color: $platinum;
+      color: $raising-black;
+    }
+
+    &:focus {
+      background-color: $spanish-gray;
+      color: $white;
+      box-shadow: none;
+      outline: none;
+    }
+}

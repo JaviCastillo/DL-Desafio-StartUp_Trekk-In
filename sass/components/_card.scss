@@ -1,0 +1,62 @@
+/*====================================================== 
+====== COMPONENT: CARD
+====================================================== */
+
+.card {
+    height: 550px;
+    width: 350px;
+    background-color: $white;
+    color: $raising-black;
+    text-align: left;
+    padding: 30px 30px;
+    margin-left: 5vw;
+    margin-bottom: 80px;
+    transition: 0.3s;
+
+    h4{
+      margin-bottom: 0;
+    }
+
+    h2{
+      margin-top: 0;
+    }
+
+    & ul li {
+      margin: 0 0 5px 0;
+    }
+
+    & ul {
+      height: 250px;
+    }
+
+    & button {
+      width: stretch;
+      height: 3rem;
+    }
+
+    &:hover {
+      box-shadow: 3px 7px 20px $gray;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  .card{
+    height: 500px;
+
+    li{
+      font-size: $medium;
+    }
+
+    h4{
+      margin: 0;
+    }
+
+    ul {
+      height: 200px;
+    }
+
+    button{
+      font-size: $medium;
+    }
+  }
+}
